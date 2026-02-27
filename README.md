@@ -29,6 +29,35 @@ Please take a look at the documentation for different ways of installing Streaml
 - [PyPI package and source code][streamlink-installation-pypi-source]
 
 
+
+## Fork install quickstart (streamlink-ar)
+
+### Windows Git Bash
+
+```bash
+git clone https://github.com/3bdoSamy/streamlink-ar.git
+cd streamlink-ar
+py -3.10 -m venv .venv
+source .venv/Scripts/activate
+python -m pip install -U pip setuptools wheel
+pip install -e .
+streamlink-ar --version
+streamlink-ar --help | grep ffmpeg-dkey
+```
+
+### Windows PowerShell
+
+```powershell
+git clone https://github.com/3bdoSamy/streamlink-ar.git
+cd streamlink-ar
+py -3.10 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -U pip setuptools wheel
+pip install -e .
+streamlink-ar --version
+streamlink-ar --help | Select-String ffmpeg-dkey
+```
+
 # 👍 Features
 
 Streamlink is built on top of a plugin system which allows support for new services to be added easily.  
