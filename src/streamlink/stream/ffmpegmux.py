@@ -88,7 +88,7 @@ class MuxedStream(Stream, Generic[TSubstreams_co]):
 
 
 class FFMPEGMuxer(StreamIO):
-    __commands__: ClassVar[list[str]] = ["ffmpeg"]
+    __commands__: ClassVar[list[str]] = ["ffmpeg", "ffmpeg.exe"]
 
     DEFAULT_LOGLEVEL = "info"
     DEFAULT_OUTPUT_FORMAT = "matroska"
